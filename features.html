@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitur - TimpaUang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: transparent;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .video-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      text-decoration: none;
+      background: rgb(255, 255, 255);
+      color: black;
+      border-radius: 5px;
+      width: fit-content;
+    }
+
+    #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: blur(10px);
+  }
+  
+    #mute-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1000px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/video/Ep032.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Audio -->
+  <audio id="bg-music" src="assets/audio/animalcrossing2Am.mp3" autoplay loop></audio>
+  <button id="mute-btn">🔈</button>
+
+  <main class="container">
+  <header>
+    <h1>Fitur Unggulan</h1>
+  </header>
+
+  <div class="gallery">
+    <div class="feature-card">
+      <img src="assets/images/pigg.png" alt="fitur 1">
+      <p>Belajar interaktif & seru</p>
+    </div>
+    <div class="feature-card">
+      <img width="500" src="assets/images/uang.png" alt="fitur 2">
+      <p>Konten lokal dan relevan</p>
+    </div>
+    <div class="feature-card">
+      <img src="assets/images/gratis.png" alt="fitur 3">
+      <p>Akses gratis tanpa batas</p>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <h2 style="color: white;">Cuplikan Video Pembelajaran</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sCUghGYNGC4?si=ExpCTG6K1vtjp1SW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <a href="index.html" class="back-btn">← Kembali ke Beranda</a>
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>
