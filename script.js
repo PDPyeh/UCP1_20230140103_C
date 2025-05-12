@@ -11,3 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  window.onload = () => {
+      const promo = document.getElementById('promo-popup');
+      promo.style.display = 'block';
+    }

@@ -19,7 +19,7 @@
     .popup {
       display: none;
       position: fixed;
-      top: 10   0px;
+      top: 100px;
       right: 20px;
       background: #4caf50;
       color: white;
@@ -78,17 +78,5 @@
   </div>
 
   <script src="script.js"></script>
-  <script>
-    window.onload = () => {
-      const promo = document.getElementById('promo-popup');
-      promo.style.display = 'block';
-    }
-
-    function kirimPesan() {
-      const popup = document.getElementById('form-popup');
-      popup.style.display = 'block';
-      popup.classList.remove("hidden");
-    }
-  </script>
 </body>
 </html>
